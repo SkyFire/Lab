@@ -32,7 +32,7 @@ echo    $$$```$$$$``$``$`````$```$
 echo    $````$```$``$``$```$`$```$
 echo    $`````$$$$``$$``$$$``$```$
 echo.
-echo      scripts for World of Warcraft Cataclysm 4.0.6a by cooler 
+echo      scripts for World of Warcraft Cataclysm 4.0.6a 
 echo.
 set /p svr=What is your MySQL host name? [localhost] :
 if %svr%. == . set svr=localhost
