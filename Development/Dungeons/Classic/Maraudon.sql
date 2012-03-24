@@ -98,7 +98,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 13601;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'Mine! Mine! Mine! Gizlock is the ruler of this domain! You shall never reveal my presence!',1,0,100,0,0,0, 'combat Say');
+(@ENTRY,0,0, 'Mine! Mine! Mine! Gizlock is the ruler of this domain! You shall never reveal my presence!',14,0,100,0,0,0, 'combat Say');
 
 -- Ambershard Crusher
 SET @ENTRY := 11781;
@@ -176,7 +176,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 11793;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s attempts to run away in fear!',2,0,100,0,0,0, 'combat Flee');
+(@ENTRY,0,0, '%s attempts to run away in fear!',16,0,100,0,0,0, 'combat Flee');
 
 -- Corruptor
 SET @ENTRY := 12217;

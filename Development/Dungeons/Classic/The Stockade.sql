@@ -32,7 +32,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 46379;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'Get up you,lazy bums,there\'s fighting to do!',0,0,50,0,0,0, 'combat Say');
+(@ENTRY,0,0, 'Get up you,lazy bums,there\'s fighting to do!',12,0,50,0,0,0, 'combat Say');
 
 -- Slag Fury
 SET @ENTRY := 46263;
@@ -52,9 +52,9 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 46381;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'Start fighting or start bleeding!',0,0,50,0,0,0, 'combat Say'),
-(@ENTRY,0,1, 'Time to fight!',0,0,50,0,0,0, 'combat Say'),
-(@ENTRY,0,2, 'Freedom!',0,0,50,0,0,0, 'combat Say');
+(@ENTRY,0,0, 'Start fighting or start bleeding!',12,0,50,0,0,0, 'combat Say'),
+(@ENTRY,0,1, 'Time to fight!',12,0,50,0,0,0, 'combat Say'),
+(@ENTRY,0,2, 'Freedom!',12,0,50,0,0,0, 'combat Say');
 
 -- Searing Destroyer
 SET @ENTRY := 46260;
@@ -82,7 +82,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 46375;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'Get up you,lazy bums,there\'s fighting to do!',0,0,50,0,0,0, 'combat Say');
+(@ENTRY,0,0, 'Get up you,lazy bums,there\'s fighting to do!',12,0,50,0,0,0, 'combat Say');
 
 -- Riverpaw Slayer
 SET @ENTRY := 46249;
@@ -117,7 +117,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 46252;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s attempts to run away in fear!',2,0,100,0,0,0, 'combat Flee');
+(@ENTRY,0,0, '%s attempts to run away in fear!',16,0,100,0,0,0, 'combat Flee');
 
 -- Riverpaw Poacher
 SET @ENTRY := 46250;
@@ -150,7 +150,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 46250;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s attempts to run away in fear!',2,0,100,0,0,0, 'combat Flee');
+(@ENTRY,0,0, '%s attempts to run away in fear!',16,0,100,0,0,0, 'combat Flee');
 
 -- Riverpaw Looter
 SET @ENTRY := 46251;
@@ -179,7 +179,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 46261;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s becomes enraged!',2,0,100,0,0,0, 'combat Enrage');
+(@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 
 -- Randolph Moloch
 SET @ENTRY := 46383;
@@ -198,9 +198,9 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 46383;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'Allow me to introduce myself. I am Randolph Moloch and I will be killing you all today.',1,0,100,0,0,0, 'combat Say'),
-(@ENTRY,1,0, 'Randolph Moloch vanishes!',3,0,100,0,0,0, 'combat Say'),
-(@ENTRY,2,0, 'My epic schemes,my great plans!Gone!',1,0,100,0,0,0, 'combat Say');
+(@ENTRY,0,0, 'Allow me to introduce myself. I am Randolph Moloch and I will be killing you all today.',14,0,100,0,0,0, 'combat Say'),
+(@ENTRY,1,0, 'Randolph Moloch vanishes!',41,0,100,0,0,0, 'combat Say'),
+(@ENTRY,2,0, 'My epic schemes,my great plans!Gone!',14,0,100,0,0,0, 'combat Say');
 
 -- Lord Overheat
 SET @ENTRY := 46264;
@@ -216,8 +216,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 46264;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'ALL MUST BURN!',1,0,100,0,0,0, 'combat Say'),
-(@ENTRY,1,0, 'FIRE...EXTINGUISHED!',1,0,100,0,0,0, 'combat Say');
+(@ENTRY,0,0, 'ALL MUST BURN!',14,0,100,0,0,0, 'combat Say'),
+(@ENTRY,1,0, 'FIRE...EXTINGUISHED!',14,0,100,0,0,0, 'combat Say');
 
 -- Hogger
 SET @ENTRY := 46254;
@@ -234,7 +234,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 46254;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'Forest just setback!',1,0,100,0,0,0, 'combat Say'),
-(@ENTRY,1,0, 'Hogger enrages!',3,0,100,0,0,0, 'combat Enrage'),
-(@ENTRY,2,0, 'Yiiipe!',1,0,100,0,0,0, 'combat Say');
+(@ENTRY,0,0, 'Forest just setback!',14,0,100,0,0,0, 'combat Say'),
+(@ENTRY,1,0, 'Hogger enrages!',41,0,100,0,0,0, 'combat Enrage'),
+(@ENTRY,2,0, 'Yiiipe!',14,0,100,0,0,0, 'combat Say');
 
