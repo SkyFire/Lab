@@ -79,6 +79,8 @@ INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`pr
 (@ENTRY,6,0, 'I hate to say I told you so...',1,0,100,0,0,11207, 'on Player Kill Text'),
 (@ENTRY,7,0, 'You won\'t... get far.',1,0,100,0,0,11212, 'on Death Text');
 
+    /* Trash Mobs */
+	
 
 
 
