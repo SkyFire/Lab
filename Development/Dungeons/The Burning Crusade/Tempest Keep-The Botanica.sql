@@ -39,13 +39,13 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17976;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'Step forward! I will see that you are properly welcomed.',1,0,100,0,0,11071, 'on Aggro Text'),
-(@ENTRY,1,0, 'You are no longer dealing with some underling.',1,0,100,0,0,11076, 'on Cast Text'),
-(@ENTRY,2,0, 'Band\'or shorel\'aran!',1,0,100,0,0,11077, 'on Cast Text'),
-(@ENTRY,3,0, 'Guards! Come and kill these intruders!',1,0,100,0,0,11078, 'on Summon Text'),
-(@ENTRY,4,0, 'Mission accomplished.',1,0,50,0,0,11073, 'on Player Kill Text'),
-(@ENTRY,4,1, 'Oh stop your whimpering.',1,0,50,0,0,11072, 'on Player Kill Text'),
-(@ENTRY,5,0, 'I have not yet... begun to...',1,0,100,0,0,11079, 'on Death Text');
+(@ENTRY,0,0, 'Step forward! I will see that you are properly welcomed.',14,0,100,0,0,11071, 'on Aggro Text'),
+(@ENTRY,1,0, 'You are no longer dealing with some underling.',14,0,100,0,0,11076, 'on Cast Text'),
+(@ENTRY,2,0, 'Band\'or shorel\'aran!',14,0,100,0,0,11077, 'on Cast Text'),
+(@ENTRY,3,0, 'Guards! Come and kill these intruders!',14,0,100,0,0,11078, 'on Summon Text'),
+(@ENTRY,4,0, 'Mission accomplished.',14,0,50,0,0,11073, 'on Player Kill Text'),
+(@ENTRY,4,1, 'Oh stop your whimpering.',14,0,50,0,0,11072, 'on Player Kill Text'),
+(@ENTRY,5,0, 'I have not yet... begun to...',14,0,100,0,0,11079, 'on Death Text');
 
 -- Thorngrin the Tender
 SET @ENTRY := 17978;
@@ -69,15 +69,15 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17978;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'What aggravation is this? You will die!',1,0,100,0,0,11205, 'on Aggro Text'),
-(@ENTRY,1,0, 'Scream while you burn!',1,0,50,0,0,11211, 'on Cast Text'),
-(@ENTRY,1,1, 'I\'ll incinerate you!',1,0,50,0,0,11210, 'on Cast Text'),
-(@ENTRY,2,0, 'Your life will be mine!',1,0,100,0,0,11208, 'on Cast Text'),
-(@ENTRY,3,0, '%s becomes enraged!',2,0,100,0,0,0, 'combat Enrage'),
-(@ENTRY,4,0, 'I revel in your pain!',1,0,100,0,0,11209, 'at 50% HP Text'),
-(@ENTRY,5,0, 'You seek a prize, eh? How about death?',1,0,100,0,0,11206, 'at 20% HP Text'),
-(@ENTRY,6,0, 'I hate to say I told you so...',1,0,100,0,0,11207, 'on Player Kill Text'),
-(@ENTRY,7,0, 'You won\'t... get far.',1,0,100,0,0,11212, 'on Death Text');
+(@ENTRY,0,0, 'What aggravation is this? You will die!',14,0,100,0,0,11205, 'on Aggro Text'),
+(@ENTRY,1,0, 'Scream while you burn!',14,0,50,0,0,11211, 'on Cast Text'),
+(@ENTRY,1,1, 'I\'ll incinerate you!',14,0,50,0,0,11210, 'on Cast Text'),
+(@ENTRY,2,0, 'Your life will be mine!',14,0,100,0,0,11208, 'on Cast Text'),
+(@ENTRY,3,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage'),
+(@ENTRY,4,0, 'I revel in your pain!',14,0,100,0,0,11209, 'at 50% HP Text'),
+(@ENTRY,5,0, 'You seek a prize, eh? How about death?',14,0,100,0,0,11206, 'at 20% HP Text'),
+(@ENTRY,6,0, 'I hate to say I told you so...',14,0,100,0,0,11207, 'on Player Kill Text'),
+(@ENTRY,7,0, 'You won\'t... get far.',14,0,100,0,0,11212, 'on Death Text');
 
     /* Trash Mobs */
 	
