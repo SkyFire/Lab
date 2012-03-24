@@ -81,9 +81,165 @@ INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`pr
 
     /* Trash Mobs */
 	
+-- Bloodfalcon
+SET @ENTRY := 18155;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,6,8,25,14000,19000,11,32323,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Charge on Close'),
+(@ENTRY,0,1,0,0,0,100,6,7000,11000,12000,16000,11,34856,0,0,0,0,0,4,0,0,0,0,0,0,0,'Cast Bloodburn'),
+(@ENTRY,0,2,0,0,0,100,6,2000,4000,8000,19000,11,18144,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Swoop');
 
+-- Bloodwarder Falconer
+SET @ENTRY := 17994;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,6,0,45,20000,25000,11,34852,0,0,0,0,0,4,0,0,0,0,0,0,0,'Cast Call of the Falcon on Close'),
+(@ENTRY,0,1,0,0,0,100,6,9000,15000,25000,31000,11,31567,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Deterrence'),
+(@ENTRY,0,2,0,9,0,100,6,0,5,12000,16000,11,32908,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Wing Clip on Close'),
+(@ENTRY,0,3,0,9,0,100,6,8,30,18000,22000,11,34879,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Multi-Shot on Close');
 
+-- Bloodwarder Greenkeeper
+SET @ENTRY := 18419;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,6,0,5,17000,21000,11,34800,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Impending Coma on Close'),
+(@ENTRY,0,1,0,9,0,100,2,0,40,7000,11000,11,34798,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Greenkeeper\'s Fury on Close'),
+(@ENTRY,0,2,0,9,0,100,4,0,40,7000,11000,11,39121,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Greenkeeper\'s Fury on Close'),
+(@ENTRY,0,3,0,0,0,100,2,8000,12000,11000,15000,11,34797,0,0,0,0,0,4,0,0,0,0,0,0,0,'Cast Nature Shock'),
+(@ENTRY,0,4,0,0,0,100,4,8000,12000,11000,15000,11,39120,0,0,0,0,0,4,0,0,0,0,0,0,0,'Cast Nature Shock');
 
+-- Bloodwarder Mender
+SET @ENTRY := 19633;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,3,0,0,0,0,22,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Phase 1 on Aggro'),
+(@ENTRY,0,1,0,4,1,100,3,0,0,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Stop Moving on Aggro'),
+(@ENTRY,0,2,0,4,1,100,3,0,0,0,0,11,17194,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Mind Blast on Aggro'),
+(@ENTRY,0,3,0,9,1,100,2,0,40,3400,4700,11,17194,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Mind Blast'),
+(@ENTRY,0,4,0,9,1,100,2,40,100,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Start Moving when not in Mind Blast Range'),
+(@ENTRY,0,5,0,9,1,100,2,10,15,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Stop Moving at 15 Yards'),
+(@ENTRY,0,6,0,9,1,100,2,0,40,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Stop Moving when in Mind Blast Range'),
+(@ENTRY,0,7,0,3,1,100,2,0,15,0,0,22,2,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Phase 2 at 15% Mana'),
+(@ENTRY,0,8,0,3,2,100,2,0,15,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Start Moving at 15% Mana'),
+(@ENTRY,0,9,0,3,2,100,2,30,100,100,100,22,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Phase 1 When Mana is above 30%'),	
+(@ENTRY,0,10,0,4,0,100,5,0,0,0,0,22,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Phase 1 on Aggro'),
+(@ENTRY,0,11,0,4,1,100,5,0,0,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Stop Moving on Aggro'),
+(@ENTRY,0,12,0,4,1,100,5,0,0,0,0,11,17287,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Mind Blast on Aggro'),
+(@ENTRY,0,13,0,9,1,100,4,0,40,3400,4700,11,17287,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Mind Blast'),
+(@ENTRY,0,14,0,9,1,100,4,40,100,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Start Moving when not in Mind Blast Range'),
+(@ENTRY,0,15,0,9,1,100,4,10,15,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Stop Moving at 15 Yards'),
+(@ENTRY,0,16,0,9,1,100,4,0,40,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Stop Moving when in Mind Blast Range'),
+(@ENTRY,0,17,0,3,1,100,4,0,15,0,0,22,2,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Phase 2 at 15% Mana'),
+(@ENTRY,0,18,0,3,2,100,4,0,15,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Start Moving at 15% Mana'),
+(@ENTRY,0,19,0,3,2,100,4,30,100,100,100,22,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Phase 1 When Mana is above 30%'),	
+(@ENTRY,0,20,0,1,0,100,6,500,1000,1800000,1800000,11,34809,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Holy Fury on Spawn'),
+(@ENTRY,0,21,0,2,1,100,7,0,30,0,0,11,35096,1,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Greater Heal at 30% HP');
+
+-- Bloodwarder Protector
+SET @ENTRY := 17993;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,6,8,25,30000,35000,11,34784,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Intervene on Close'),
+(@ENTRY,0,1,0,9,0,100,6,0,5,9000,15000,11,29765,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Crystal Strike on Close'),
+(@ENTRY,0,2,0,0,0,100,6,7000,14000,18000,25000,11,35399,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Spell Reflection'),
+(@ENTRY,0,3,0,2,0,100,7,0,30,0,0,11,31589,0,0,0,0,0,4,0,0,0,0,0,0,0,'Cast Slow at 30% HP');
+
+-- Bloodwarder Steward
+SET @ENTRY := 18404;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,6,7000,12000,15000,20000,11,34821,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Arcane Flurry');
+
+-- Blue Seedling
+SET @ENTRY := 19962;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,6,0,40,6000,9000,11,34782,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Bind Feet on Close');
+
+-- Frayer
+SET @ENTRY := 18587;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,50,7,0,0,0,0,11,34204,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Arcane Form on Aggro'),
+(@ENTRY,0,1,0,4,0,50,7,0,0,0,0,11,34203,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Fire Form on Aggro'),
+(@ENTRY,0,2,0,4,0,50,7,0,0,0,0,11,34202,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Frost Form on Aggro'),
+(@ENTRY,0,3,0,4,0,50,7,0,0,0,0,11,34205,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Frost Form on Aggro');
+
+-- Frayer Protector
+SET @ENTRY := 19953;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,1,4,0,100,3,0,0,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Stop Moving on Aggro'),
+(@ENTRY,0,1,2,61,0,100,3,0,0,0,0,11,34745,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Shoot Thorns on Aggro'),
+(@ENTRY,0,2,3,61,0,100,3,0,0,0,0,20,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Stop Melee Attack on Aggro'),
+(@ENTRY,0,3,0,61,0,100,3,0,0,0,0,22,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Phase 1 on Aggro'),
+(@ENTRY,0,4,5,9,1,100,2,5,30,2300,3900,11,34745,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Shoot Thorns'),
+(@ENTRY,0,5,0,61,1,100,2,0,0,0,0,40,2,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Ranged Weapon Model'),
+(@ENTRY,0,6,7,9,1,100,2,30,80,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Start Moving when not in Shoot Thorns Range'),
+(@ENTRY,0,7,0,61,1,100,2,0,0,0,0,20,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Start Melee Attack when not in Shoot Thorns Range'),
+(@ENTRY,0,8,9,9,1,100,2,0,10,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Start Moving when not in Shoot Thorns Range'),
+(@ENTRY,0,9,10,61,1,100,2,0,0,0,0,40,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Melee Weapon Model when not in Shoot Thorns Range'),
+(@ENTRY,0,10,0,61,1,100,2,0,0,0,0,20,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Start Melee Attack when not in Shoot Thorns Range'),
+(@ENTRY,0,11,12,9,1,100,2,11,25,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Stop Moving at 25 Yards'),
+(@ENTRY,0,12,13,61,1,100,2,0,0,0,0,20,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Stop Melee Attack at 25 Yards'),
+(@ENTRY,0,13,0,61,1,100,2,0,0,0,0,40,2,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Ranged Weapon Model at 25 Yards'),
+(@ENTRY,0,14,15,7,1,100,3,0,0,0,0,40,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Melee Weapon Model on Evade'),
+(@ENTRY,0,15,0,61,1,100,3,0,0,0,0,22,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Reset on Evade'),
+(@ENTRY,0,16,1,4,0,100,5,0,0,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Stop Moving on Aggro'),
+(@ENTRY,0,17,2,61,0,100,5,0,0,0,0,11,34745,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Shoot Thorns on Aggro'),
+(@ENTRY,0,18,3,61,0,100,5,0,0,0,0,20,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Stop Melee Attack on Aggro'),
+(@ENTRY,0,19,0,61,0,100,5,0,0,0,0,22,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Phase 1 on Aggro'),
+(@ENTRY,0,20,5,9,1,100,4,5,30,2300,3900,11,34745,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Shoot Thorns'),
+(@ENTRY,0,21,0,61,1,100,4,0,0,0,0,40,2,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Ranged Weapon Model'),
+(@ENTRY,0,22,7,9,1,100,4,30,80,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Start Moving when not in Shoot Thorns Range'),
+(@ENTRY,0,23,0,61,1,100,4,0,0,0,0,20,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Start Melee Attack when not in Shoot Thorns Range'),
+(@ENTRY,0,24,9,9,1,100,4,0,10,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Start Moving when not in Shoot Thorns Range'),
+(@ENTRY,0,25,10,61,1,100,4,0,0,0,0,40,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Melee Weapon Model when not in Shoot Thorns Range'),
+(@ENTRY,0,26,0,61,1,100,4,0,0,0,0,20,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Start Melee Attack when not in Shoot Thorns Range'),
+(@ENTRY,0,27,12,9,1,100,4,11,25,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Stop Moving at 25 Yards'),
+(@ENTRY,0,28,13,61,1,100,4,0,0,0,0,20,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Stop Melee Attack at 25 Yards'),
+(@ENTRY,0,29,0,61,1,100,4,0,0,0,0,40,2,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Ranged Weapon Model at 25 Yards'),
+(@ENTRY,0,30,15,7,1,100,5,0,0,0,0,40,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Melee Weapon Model on Evade'),
+(@ENTRY,0,31,0,61,1,100,5,0,0,0,0,22,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Reset on Evade');
+
+-- Frayer Wildling
+SET @ENTRY := 19608;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,2,0,5,11000,16000,11,34644,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Lash on Close'),
+(@ENTRY,0,1,0,9,0,100,4,0,5,11000,16000,11,39122,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Lash on Close');
+
+-- Greater Frayer
+SET @ENTRY := 19557;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,2,0,5,11000,16000,11,34644,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Lash on Close'),
+(@ENTRY,0,1,0,9,0,100,4,0,5,11000,16000,11,39122,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Lash on Close');
+
+-- Mutate Fleshlasher
+SET @ENTRY := 19598;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,6,0,5,5000,8000,11,34351,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Vicious Bite on Close');
+
+-- Mutate Fleshlasher
+SET @ENTRY := 25354;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,6,0,5,5000,8000,11,34351,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Vicious Bite on Close');
 
 
 
