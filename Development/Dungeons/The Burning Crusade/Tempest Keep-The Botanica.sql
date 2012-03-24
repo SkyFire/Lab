@@ -241,28 +241,170 @@ DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
 (@ENTRY,0,0,0,9,0,100,6,0,5,5000,8000,11,34351,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Vicious Bite on Close');
 
+-- Nethervine Inciter
+SET @ENTRY := 19511;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,6,0,10,120000,120000,11,34616,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Deadly Poison on Close'),
+(@ENTRY,0,1,0,9,0,100,6,0,5,20000,25000,11,30621,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Kidney Shot on Close'),
+(@ENTRY,0,2,0,9,0,100,6,0,40,13000,18000,11,34615,0,0,0,0,0,5,0,0,0,0,0,0,0,'Cast Mind-numbing Poison on Close'),
+(@ENTRY,0,3,0,2,0,100,6,0,30,30000,35000,11,34173,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Sunseeker Blessing at 30% HP');
 
+-- Nethervine Reaper
+SET @ENTRY := 19512;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,6,0,5,6000,9000,11,15284,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Cleave on Close'),
+(@ENTRY,0,1,0,2,0,100,6,0,30,30000,35000,11,34173,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Sunseeker Blessing at 30% HP');
 
+-- Nethervine Trickster
+SET @ENTRY := 19843;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,11,0,100,7,0,0,0,0,11,30991,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Stealth on Spawn'),
+(@ENTRY,0,1,0,7,0,100,7,0,0,0,0,11,30991,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Stealth on Evade'),
+(@ENTRY,0,2,0,67,0,100,6,9000,12000,0,0,11,34614,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Backstab');
 
+-- Red Seedling
+SET @ENTRY := 19964;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,6,0,20,9000,13000,11,36339,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Fire Blast on Close');
 
+-- Summoned Bloodwarder Mender
+SET @ENTRY := 20083;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,4,0,100,3,0,0,0,0,22,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Phase 1 on Aggro'),
+(@ENTRY,0,1,0,4,1,100,3,0,0,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Stop Moving on Aggro'),
+(@ENTRY,0,2,0,4,1,100,3,0,0,0,0,11,17194,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Mind Blast on Aggro'),
+(@ENTRY,0,3,0,9,1,100,2,0,40,3400,4700,11,17194,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Mind Blast'),
+(@ENTRY,0,4,0,9,1,100,2,40,100,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Start Moving when not in Mind Blast Range'),
+(@ENTRY,0,5,0,9,1,100,2,10,15,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Stop Moving at 15 Yards'),
+(@ENTRY,0,6,0,9,1,100,2,0,40,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Stop Moving when in Mind Blast Range'),
+(@ENTRY,0,7,0,3,1,100,2,0,15,0,0,22,2,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Phase 2 at 15% Mana'),
+(@ENTRY,0,8,0,3,2,100,2,0,15,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Start Moving at 15% Mana'),
+(@ENTRY,0,9,0,3,2,100,2,30,100,100,100,22,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Phase 1 When Mana is above 30%'),	
+(@ENTRY,0,10,0,4,0,100,5,0,0,0,0,22,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Phase 1 on Aggro'),
+(@ENTRY,0,11,0,4,1,100,5,0,0,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Stop Moving on Aggro'),
+(@ENTRY,0,12,0,4,1,100,5,0,0,0,0,11,17287,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Mind Blast on Aggro'),
+(@ENTRY,0,13,0,9,1,100,4,0,40,3400,4700,11,17287,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Mind Blast'),
+(@ENTRY,0,14,0,9,1,100,4,40,100,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Start Moving when not in Mind Blast Range'),
+(@ENTRY,0,15,0,9,1,100,4,10,15,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Stop Moving at 15 Yards'),
+(@ENTRY,0,16,0,9,1,100,4,0,40,0,0,21,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Stop Moving when in Mind Blast Range'),
+(@ENTRY,0,17,0,3,1,100,4,0,15,0,0,22,2,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Phase 2 at 15% Mana'),
+(@ENTRY,0,18,0,3,2,100,4,0,15,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Start Moving at 15% Mana'),
+(@ENTRY,0,19,0,3,2,100,4,30,100,100,100,22,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Phase 1 When Mana is above 30%'),	
+(@ENTRY,0,20,0,1,0,100,6,500,1000,1800000,1800000,11,34809,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Holy Fury on Spawn'),
+(@ENTRY,0,21,0,2,1,100,7,0,30,0,0,11,35096,1,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Greater Heal at 30% HP');
 
+-- Summoned Bloodwarder Reservist
+SET @ENTRY := 20078;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,6,0,5,8000,12000,11,34820,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Arcane Strike on Close');
 
+-- Sunseeker Botanist
+SET @ENTRY := 18422;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,14,0,100,2,4000,40,21000,26000,11,34361,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Regrowth on Friendlies'),
+(@ENTRY,0,1,0,14,0,100,4,4000,40,21000,26000,11,39125,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Regrowth on Friendlies'),
+(@ENTRY,0,2,0,14,0,100,2,1000,0,25000,29000,11,34254,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Rejuvenate Plant on Friendlies'),
+(@ENTRY,0,3,0,14,0,100,4,1000,0,25000,29000,11,39126,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Rejuvenate Plant on Friendlies'),
+(@ENTRY,0,4,0,16,0,100,6,34350,10,16000,25000,11,34350,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Nature\'s Rage on Friendlies Missing Buff');
 
+-- Sunseeker Channeler
+SET @ENTRY := 19505;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,6,0,10,19000,25000,11,34634,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Sunseeker Aura on Close'),
+(@ENTRY,0,1,0,0,0,100,6,7000,15000,15000,21000,11,34637,0,0,0,0,0,4,0,0,0,0,0,0,0,'Cast Soul Channel'),
+(@ENTRY,0,2,0,2,0,100,6,0,60,19000,25000,11,34222,1,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Sunseeker Blessing at 60% HP'),
+(@ENTRY,0,3,0,2,0,100,6,0,30,30000,35000,11,34173,1,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Sunseeker Blessing at 30% HP');
 
+-- Sunseeker Chemist
+SET @ENTRY := 19486;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,2,0,8,12000,18000,11,34359,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Fire Breath Potion on Close'),
+(@ENTRY,0,1,0,9,0,100,4,0,8,12000,18000,11,39128,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Fire Breath Potion on Close'),
+(@ENTRY,0,2,0,0,0,100,2,10000,16000,20000,27000,11,34358,0,0,0,0,0,4,0,0,0,0,0,0,0,'Cast Vial of Poison'),
+(@ENTRY,0,3,0,0,0,100,4,10000,16000,20000,27000,11,39127,0,0,0,0,0,4,0,0,0,0,0,0,0,'Cast Vial of Poison');
 
+-- Sunseeker Gene-Splicer
+SET @ENTRY := 19507;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,2,0,30,24000,32000,11,34642,0,0,0,0,0,4,0,0,0,0,0,0,0,'Cast Death & Decay on Close'),
+(@ENTRY,0,1,0,9,0,100,4,0,30,24000,32000,11,39347,0,0,0,0,0,4,0,0,0,0,0,0,0,'Cast Death & Decay on Close'),
+(@ENTRY,0,2,3,2,0,100,7,0,30,0,0,12,19598,1,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Summon Mutate Fleshlasher at 30% HP'),
+(@ENTRY,0,3,0,61,0,100,7,0,0,0,0,12,19598,1,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Summon Mutate Fleshlasher at 30% HP');
 
+-- Sunseeker Geomancer
+SET @ENTRY := 18420;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,6,0,8,13600,14500,11,35124,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Arcane Explosion on Close');
 
+-- Sunseeker Harvester
+SET @ENTRY := 19509;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,6,0,30,13600,14500,11,34639,0,0,0,0,0,4,0,0,0,0,0,0,0,'Cast Polymorph on Close'),
+(@ENTRY,0,1,0,0,0,100,6,2000,4500,12000,20000,11,34640,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Wilting Touch'),
+(@ENTRY,0,2,3,2,0,100,7,0,50,0,0,12,19598,1,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Summon Mutate Fleshlasher at 50% HP'),
+(@ENTRY,0,3,0,61,0,100,7,0,0,0,0,12,19598,1,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Summon Mutate Fleshlasher at 50% HP');
 
+-- Sunseeker Herbalist
+SET @ENTRY := 19508;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,6,0,30,15000,19000,11,22127,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Entangling Roots on Close');
 
+-- Sunseeker Researcher
+SET @ENTRY := 18421;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,0,0,100,6,1000,1000,30000,35000,11,34355,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Poison Shield'),
+(@ENTRY,0,1,0,9,0,50,6,0,20,9000,15000,11,34354,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Flame Shock on Close'),
+(@ENTRY,0,2,0,9,0,50,6,0,20,9000,15000,11,34353,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Frost Shock on Close'),
+(@ENTRY,0,3,0,9,0,50,6,0,20,9000,15000,11,34352,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Mind Shock on Close');
 
+-- Tempest-Forge Peacekeeper
+SET @ENTRY := 18405;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,6,0,40,14000,21000,11,34785,0,0,0,0,0,4,0,0,0,0,0,0,0,'Cast Arcane Volley on Close'),
+(@ENTRY,0,1,0,9,0,100,6,0,5,9000,13000,11,34793,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Arcane Blast on Close'),
+(@ENTRY,0,2,0,0,0,100,6,5000,8000,11000,16000,11,34791,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Arcane Explosion');
 
+-- Thorn Flayer
+SET @ENTRY := 19920;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,6,0,35,7000,11000,11,35507,0,0,0,0,0,4,0,0,0,0,0,0,0,'Cast Mind Flay on Close');
 
-
-
-
-
-
-
-
-
+-- White Seedling
+SET @ENTRY := 19958;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,0,9,0,100,6,0,5,9000,14000,11,34752,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Freezing Touch on Close');
 
