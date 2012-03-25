@@ -37,9 +37,9 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 2019;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'You will be easy prey, $c.',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,1, 'My talons will shred your puny body, $r.',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,2, 'A fine trophy your head will make, $r.',0,0,50,0,0,0, 'on Aggro Text');
+(@ENTRY,0,0, 'You will be easy prey, $c.',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,1, 'My talons will shred your puny body, $r.',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,2, 'A fine trophy your head will make, $r.',12,0,50,0,0,0, 'on Aggro Text');
 
 -- Bloodfeather Harpy
 SET @ENTRY := 2015;
@@ -52,9 +52,9 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 2015;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'You will be easy prey, $c.',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,1, 'My talons will shred your puny body, $r.',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,2, 'A fine trophy your head will make, $r.',0,0,50,0,0,0, 'on Aggro Text');
+(@ENTRY,0,0, 'You will be easy prey, $c.',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,1, 'My talons will shred your puny body, $r.',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,2, 'A fine trophy your head will make, $r.',12,0,50,0,0,0, 'on Aggro Text');
 
 -- Bloodfeather Matriarch
 SET @ENTRY := 2021;
@@ -80,10 +80,10 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 2021;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s attempts to run away in fear!',2,0,100,0,0,0, 'combat Flee'),
-(@ENTRY,1,0, 'You will be easy prey, $c.',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,1,1, 'My talons will shred your puny body, $r.',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,1,2, 'A fine trophy your head will make, $r.',0,0,50,0,0,0, 'on Aggro Text');
+(@ENTRY,0,0, '%s attempts to run away in fear!',16,0,100,0,0,0, 'combat Flee'),
+(@ENTRY,1,0, 'You will be easy prey, $c.',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,1,1, 'My talons will shred your puny body, $r.',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,1,2, 'A fine trophy your head will make, $r.',12,0,50,0,0,0, 'on Aggro Text');
 
 -- Bloodfeather Rogue
 SET @ENTRY := 2017;
@@ -95,9 +95,9 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 2017;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'You will be easy prey, $c.',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,1, 'My talons will shred your puny body, $r.',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,2, 'A fine trophy your head will make, $r.',0,0,50,0,0,0, 'on Aggro Text');
+(@ENTRY,0,0, 'You will be easy prey, $c.',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,1, 'My talons will shred your puny body, $r.',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,2, 'A fine trophy your head will make, $r.',12,0,50,0,0,0, 'on Aggro Text');
 
 -- Bloodfeather Sorceress
 SET @ENTRY := 2018;
@@ -124,10 +124,10 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 2018;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s attempts to run away in fear!',2,0,100,0,0,0, 'combat Flee'),
-(@ENTRY,1,0, 'You will be easy prey, $c.',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,1,1, 'My talons will shred your puny body, $r.',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,1,2, 'A fine trophy your head will make, $r.',0,0,50,0,0,0, 'on Aggro Text');
+(@ENTRY,0,0, '%s attempts to run away in fear!',16,0,100,0,0,0, 'combat Flee'),
+(@ENTRY,1,0, 'You will be easy prey, $c.',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,1,1, 'My talons will shred your puny body, $r.',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,1,2, 'A fine trophy your head will make, $r.',12,0,50,0,0,0, 'on Aggro Text');
 
 -- Bloodfeather Wind Witch
 SET @ENTRY := 2020;
@@ -140,9 +140,9 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 2020;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'You will be easy prey, $c.',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,1, 'My talons will shred your puny body, $r.',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,2, 'A fine trophy your head will make, $r.',0,0,50,0,0,0, 'on Aggro Text');
+(@ENTRY,0,0, 'You will be easy prey, $c.',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,1, 'My talons will shred your puny body, $r.',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,2, 'A fine trophy your head will make, $r.',12,0,50,0,0,0, 'on Aggro Text');
 
 -- Bogling
 SET @ENTRY := 3569;
@@ -154,7 +154,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 3569;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'KILL!!!',0,0,100,0,0,0, 'on Aggro Text');
+(@ENTRY,0,0, 'KILL!!!',12,0,100,0,0,0, 'on Aggro Text');
 
 -- Dark Sprite
 SET @ENTRY := 2004;
@@ -225,7 +225,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 2006;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s attempts to run away in fear!',2,0,100,0,0,0, 'combat Flee');
+(@ENTRY,0,0, '%s attempts to run away in fear!',16,0,100,0,0,0, 'combat Flee');
 
 -- Gnarlpine Gardener
 SET @ENTRY := 2007;
@@ -238,7 +238,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 2007;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s attempts to run away in fear!',2,0,100,0,0,0, 'combat Flee');
+(@ENTRY,0,0, '%s attempts to run away in fear!',16,0,100,0,0,0, 'combat Flee');
 
 -- Gnarlpine Mystic
 SET @ENTRY := 7235;
@@ -263,7 +263,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 7235;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s attempts to run away in fear!',2,0,100,0,0,0, 'combat Flee');
+(@ENTRY,0,0, '%s attempts to run away in fear!',16,0,100,0,0,0, 'combat Flee');
 
 -- Gnarlpine Pathfinder
 SET @ENTRY := 2012;
@@ -289,7 +289,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 2012;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s attempts to run away in fear!',2,0,100,0,0,0, 'combat Flee');
+(@ENTRY,0,0, '%s attempts to run away in fear!',16,0,100,0,0,0, 'combat Flee');
 
 -- Gnarlpine Shaman
 SET @ENTRY := 2009;
@@ -302,7 +302,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 2009;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s attempts to run away in fear!',2,0,100,0,0,0, 'combat Flee');
+(@ENTRY,0,0, '%s attempts to run away in fear!',16,0,100,0,0,0, 'combat Flee');
 
 -- Gnarlpine Warrior
 SET @ENTRY := 2008;
@@ -412,7 +412,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 2003;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s attempts to run away in fear!',2,0,100,0,0,0, 'combat Flee');
+(@ENTRY,0,0, '%s attempts to run away in fear!',16,0,100,0,0,0, 'combat Flee');
 
 -- Threggil
 SET @ENTRY := 14432;

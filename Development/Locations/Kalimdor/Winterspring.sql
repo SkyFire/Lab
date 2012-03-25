@@ -30,12 +30,12 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 7524;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'The crystal will save us! We can be saved!',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,1, 'My children... what have I done?',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,2, 'The crystal can still be found... if we can just find it again...',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,3, 'It\'s our fault... the destruction is all our fault...',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,1,0, 'No... I was to leave forever... I will still...',0,0,50,0,0,0, 'on Death Text'),
-(@ENTRY,1,1, 'My curse will yours,fooløûð $R',0,0,50,0,0,0, 'on Death Text');
+(@ENTRY,0,0, 'The crystal will save us! We can be saved!',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,1, 'My children... what have I done?',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,2, 'The crystal can still be found... if we can just find it again...',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,3, 'It\'s our fault... the destruction is all our fault...',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,1,0, 'No... I was to leave forever... I will still...',12,0,50,0,0,0, 'on Death Text'),
+(@ENTRY,1,1, 'My curse will yours,fooløûð $R',12,0,50,0,0,0, 'on Death Text');
 
 -- Released Highborne Spirit
 SET @ENTRY := 48727;
@@ -47,9 +47,9 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 48727;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'Thank you...',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,1, 'The crystal has returned.You must leave...',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,2, 'Leave now... you do not deserve to suffer the crystal\'s wrath...',0,0,50,0,0,0, 'on Aggro Text');
+(@ENTRY,0,0, 'Thank you...',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,1, 'The crystal has returned.You must leave...',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,2, 'Leave now... you do not deserve to suffer the crystal\'s wrath...',12,0,50,0,0,0, 'on Aggro Text');
 
 -- Arcane Mana-Cluster
 SET @ENTRY := 50322;
@@ -75,8 +75,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 48740;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'You don\'t understand! I had to study it! I HAD TO!',0,0,100,0,0,0, 'on Aggro Text'),
-(@ENTRY,1,0, 'Forgive... me...',0,0,100,0,0,0, 'on Death Text');
+(@ENTRY,0,0, 'You don\'t understand! I had to study it! I HAD TO!',12,0,100,0,0,0, 'on Aggro Text'),
+(@ENTRY,1,0, 'Forgive... me...',12,0,100,0,0,0, 'on Death Text');
 
 -- Azurous
 SET @ENTRY := 10202;
@@ -96,7 +96,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 7454;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s becomes crazed!',2,0,100,0,0,0, 'combat Crazed');
+(@ENTRY,0,0, '%s becomes crazed!',16,0,100,0,0,0, 'combat Crazed');
 
 -- Betrayed Ranger
 SET @ENTRY := 18670;
@@ -176,7 +176,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 7452;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s becomes enraged!',2,0,100,0,0,0, 'combat Enrage');
+(@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 
 -- Dimensional Ooze
 SET @ENTRY := 50319;
@@ -288,7 +288,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 7433;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s becomes enraged!',2,0,100,0,0,0, 'combat Enrage');
+(@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 
 -- Frostsaber Pride Watcher
 SET @ENTRY := 7434;
@@ -303,7 +303,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 7434;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s becomes enraged!',2,0,100,0,0,0, 'combat Enrage');
+(@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 
 -- Frostsaber Stalker
 SET @ENTRY := 7432;
@@ -318,7 +318,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 7432;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s becomes enraged!',2,0,100,0,0,0, 'combat Enrage');
+(@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 
 -- Frostshard Rumbler
 SET @ENTRY := 48960;
@@ -570,12 +570,12 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 7523;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'The crystal will save us! We can be saved!',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,1, 'My children... what have I done?',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,2, 'The crystal can still be found... if we can just find it again...',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,3, 'It\'s our fault... the destruction is all our fault...',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,1,0, 'No... I was to leave forever... I will still...',0,0,50,0,0,0, 'on Death Text'),
-(@ENTRY,1,1, 'My curse will yours,fooløûð $R',0,0,50,0,0,0, 'on Death Text');
+(@ENTRY,0,0, 'The crystal will save us! We can be saved!',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,1, 'My children... what have I done?',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,2, 'The crystal can still be found... if we can just find it again...',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,3, 'It\'s our fault... the destruction is all our fault...',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,1,0, 'No... I was to leave forever... I will still...',12,0,50,0,0,0, 'on Death Text'),
+(@ENTRY,1,1, 'My curse will yours,fooløûð $R',12,0,50,0,0,0, 'on Death Text');
 
 -- Ursius
 SET @ENTRY := 10806;
@@ -722,7 +722,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 15623;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s becomes enraged!',2,0,100,0,0,0, 'combat Enrage');
+(@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 
 -- Xorothian Eredar
 SET @ENTRY := 50315;

@@ -121,7 +121,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17370;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'Lok Narash!',0,0,100,0,0,0, 'on Aggro Text');
+(@ENTRY,0,0, 'Lok Narash!',12,0,100,0,0,0, 'on Aggro Text');
 
 -- Laughing Skull Legionnaire
 SET @ENTRY := 17626;
@@ -135,7 +135,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17626;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s becomes enraged!',2,0,100,0,0,0, 'combat Enrage');
+(@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 	
 -- Laughing Skull Rogue
 SET @ENTRY := 17491;
@@ -152,7 +152,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17491;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'What a pathetic victim!',1,0,100,0,0,0, 'on Aggro Text');
+(@ENTRY,0,0, 'What a pathetic victim!',14,0,100,0,0,0, 'on Aggro Text');
 
 -- Laughing Skull Warden
 SET @ENTRY := 17624;

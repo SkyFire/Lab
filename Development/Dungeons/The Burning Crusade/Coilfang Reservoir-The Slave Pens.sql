@@ -35,7 +35,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17991;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s goes into a frenzy!',2,0,100,0,0,0, 'combat Frenzy');
+(@ENTRY,0,0, '%s goes into a frenzy!',16,0,100,0,0,0, 'combat Frenzy');
 
 -- Mennu the Betrayer
 SET @ENTRY := 17941;
@@ -54,12 +54,12 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17941;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'The work must continue.',1,0,50,0,0,10376, 'on Aggro Text'),
-(@ENTRY,0,1, 'Don\'t make me kill you!',1,0,50,0,0,10378, 'on Aggro Text'),
-(@ENTRY,0,2, 'You brought this on yourselves.',1,0,50,0,0,10379, 'on Aggro Text'),
-(@ENTRY,1,0, 'It had to be done.',1,0,50,0,0,10380, 'on Player Kill Text'),
-(@ENTRY,1,1, 'You should not have come.',1,0,50,0,0,10381, 'on Player Kill Text'),
-(@ENTRY,2,0, 'I... Deserve this.',1,0,100,0,0,10382, 'on Death Text');
+(@ENTRY,0,0, 'The work must continue.',14,0,50,0,0,10376, 'on Aggro Text'),
+(@ENTRY,0,1, 'Don\'t make me kill you!',14,0,50,0,0,10378, 'on Aggro Text'),
+(@ENTRY,0,2, 'You brought this on yourselves.',14,0,50,0,0,10379, 'on Aggro Text'),
+(@ENTRY,1,0, 'It had to be done.',14,0,50,0,0,10380, 'on Player Kill Text'),
+(@ENTRY,1,1, 'You should not have come.',14,0,50,0,0,10381, 'on Player Kill Text'),
+(@ENTRY,2,0, 'I... Deserve this.',14,0,100,0,0,10382, 'on Death Text');
 
 -- Quagmirran
 SET @ENTRY := 17942;
@@ -105,7 +105,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17962;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s goes into a frenzy!',2,0,100,0,0,0, 'combat Frenzy');
+(@ENTRY,0,0, '%s goes into a frenzy!',16,0,100,0,0,0, 'combat Frenzy');
 
 -- Coilfang Defender
 SET @ENTRY := 17958;
@@ -187,14 +187,14 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17959;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'Hurry up with it already! The longer you take, the more of a hurtin\' I\'m putting on you!',1,0,50,0,0,0, 'say Text'),
-(@ENTRY,0,1, 'Wake up! Now get up and back to work!',1,0,50,0,0,0, 'say Text'),
-(@ENTRY,0,2, 'Too soon! You are slacking off too soon!',1,0,50,0,0,0, 'say Text'),
-(@ENTRY,0,3, 'Hey!  Over here!  Yeah, over here... I\'m in this cage!!!',1,0,50,0,0,0, 'say Text'),
-(@ENTRY,0,4, 'This is terrible..... my arms grow tired from beating on you lazy peons!',1,0,50,0,0,0, 'say Text'),
-(@ENTRY,0,5, 'Get back to work you!',1,0,50,0,0,0, 'say Text'),
-(@ENTRY,0,6, 'What is this?! Didn\'t mommy and daddy teach you anything?',1,0,50,0,0,0, 'say Text'),
-(@ENTRY,1,0, 'Assist me slaves!',1,0,100,0,0,0, 'say Text');
+(@ENTRY,0,0, 'Hurry up with it already! The longer you take, the more of a hurtin\' I\'m putting on you!',14,0,50,0,0,0, 'say Text'),
+(@ENTRY,0,1, 'Wake up! Now get up and back to work!',14,0,50,0,0,0, 'say Text'),
+(@ENTRY,0,2, 'Too soon! You are slacking off too soon!',14,0,50,0,0,0, 'say Text'),
+(@ENTRY,0,3, 'Hey!  Over here!  Yeah, over here... I\'m in this cage!!!',14,0,50,0,0,0, 'say Text'),
+(@ENTRY,0,4, 'This is terrible..... my arms grow tired from beating on you lazy peons!',14,0,50,0,0,0, 'say Text'),
+(@ENTRY,0,5, 'Get back to work you!',14,0,50,0,0,0, 'say Text'),
+(@ENTRY,0,6, 'What is this?! Didn\'t mommy and daddy teach you anything?',14,0,50,0,0,0, 'say Text'),
+(@ENTRY,1,0, 'Assist me slaves!',14,0,100,0,0,0, 'say Text');
 
 -- Coilfang Soothsayer
 SET @ENTRY := 17960;
@@ -286,5 +286,5 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17964;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s attempts to run away in fear!',2,0,100,0,0,0, 'combat Flee');
+(@ENTRY,0,0, '%s attempts to run away in fear!',16,0,100,0,0,0, 'combat Flee');
 

@@ -41,14 +41,14 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 20885;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'It is unwise to anger me.',1,0,100,0,0,11086, 'on Aggro Text'),
-(@ENTRY,1,0, 'I\'ll cut you to pieces!',1,0,50,0,0,11090, 'on Cast Text'),
-(@ENTRY,1,1, 'Reap the Whirlwind!',1,0,50,0,0,11089, 'on Cast Text'),
-(@ENTRY,2,0, 'Ahh... That is much better.',1,0,50,0,0,11091, 'on Cast Text'),
-(@ENTRY,2,1, 'Ahh... Just what I needed.',1,0,50,0,0,11092, 'on Cast Text'),
-(@ENTRY,3,0, 'Completely ineffective. Just like someone else I know.',1,0,50,0,0,11087, 'on Player Kill Text'),
-(@ENTRY,3,1, 'You chose the wrong opponent.',1,0,50,0,0,11088, 'on Player Kill Text'),
-(@ENTRY,4,0, 'Now I\'m really... angry...',1,0,100,0,0,11093, 'on Death Text');
+(@ENTRY,0,0, 'It is unwise to anger me.',14,0,100,0,0,11086, 'on Aggro Text'),
+(@ENTRY,1,0, 'I\'ll cut you to pieces!',14,0,50,0,0,11090, 'on Cast Text'),
+(@ENTRY,1,1, 'Reap the Whirlwind!',14,0,50,0,0,11089, 'on Cast Text'),
+(@ENTRY,2,0, 'Ahh... That is much better.',14,0,50,0,0,11091, 'on Cast Text'),
+(@ENTRY,2,1, 'Ahh... Just what I needed.',14,0,50,0,0,11092, 'on Cast Text'),
+(@ENTRY,3,0, 'Completely ineffective. Just like someone else I know.',14,0,50,0,0,11087, 'on Player Kill Text'),
+(@ENTRY,3,1, 'You chose the wrong opponent.',14,0,50,0,0,11088, 'on Player Kill Text'),
+(@ENTRY,4,0, 'Now I\'m really... angry...',14,0,100,0,0,11093, 'on Death Text');
 
 -- Wrath-Scryer Soccothrates
 SET @ENTRY := 20886;
@@ -67,9 +67,9 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 20886;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'At last, a target for my frustrations!',1,0,100,0,0,11238, 'on Aggro Text'),
-(@ENTRY,1,0, 'Yes, that was quite satisfying',1,0,100,0,0,11239, 'on Player Kill Text'),
-(@ENTRY,2,0, 'Knew this was... the only way out',1,0,100,0,0,11243, 'on Death Text');
+(@ENTRY,0,0, 'At last, a target for my frustrations!',14,0,100,0,0,11238, 'on Aggro Text'),
+(@ENTRY,1,0, 'Yes, that was quite satisfying',14,0,100,0,0,11239, 'on Player Kill Text'),
+(@ENTRY,2,0, 'Knew this was... the only way out',14,0,100,0,0,11243, 'on Death Text');
 
 -- Zereketh The Unbound
 SET @ENTRY := 20870;
@@ -90,12 +90,12 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 20870;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'Life energy to... consume.',1,0,100,0,0,11250, 'on Aggro Text'),
-(@ENTRY,1,0, 'The shadow... will engulf you.',1,0,50,0,0,11253, 'on Cast Text'),
-(@ENTRY,1,1, 'Darkness...consumes...all.',1,0,50,0,0,11254, 'on Cast Text'),
-(@ENTRY,2,0, 'This vessel... is empty.',1,0,50,0,0,11251, 'on Player Kill Text'),
-(@ENTRY,2,1, 'No...more...life.',1,0,50,0,0,11252, 'on Player Kill Text'),
-(@ENTRY,3,0, 'The void...beckons.',1,0,100,0,0,11255, 'on Death Text');
+(@ENTRY,0,0, 'Life energy to... consume.',14,0,100,0,0,11250, 'on Aggro Text'),
+(@ENTRY,1,0, 'The shadow... will engulf you.',14,0,50,0,0,11253, 'on Cast Text'),
+(@ENTRY,1,1, 'Darkness...consumes...all.',14,0,50,0,0,11254, 'on Cast Text'),
+(@ENTRY,2,0, 'This vessel... is empty.',14,0,50,0,0,11251, 'on Player Kill Text'),
+(@ENTRY,2,1, 'No...more...life.',14,0,50,0,0,11252, 'on Player Kill Text'),
+(@ENTRY,3,0, 'The void...beckons.',14,0,100,0,0,11255, 'on Death Text');
 
     /* Trash Mobs */
 	
@@ -419,7 +419,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 20866;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s becomes enraged!',2,0,100,0,0,0, 'combat Enrage');
+(@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 
 -- Skulking Witch
 SET @ENTRY := 20882;
