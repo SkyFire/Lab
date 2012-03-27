@@ -18,7 +18,9 @@
  */
  
   /* Dungeon Normal for 5 people */
-    /* Trash Mobs & Bosses */
+    /* Bosses */
+	
+
 	
 -- Skeletal Highborne
 SET @ENTRY := 11476;
