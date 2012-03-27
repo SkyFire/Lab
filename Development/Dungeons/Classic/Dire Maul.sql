@@ -18,10 +18,40 @@
  */
  
   /* Dungeon Normal for 5 people */
-    /* Bosses */
+  
+        /* Bosses */
 	
+-- Alzzin the Wildshaper
+SET @ENTRY := 11492;
+UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
+DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
+INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
+(@ENTRY,0,0,1,4,0,100,3,0,0,0,0,11,22128,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Thorns on Aggro'),
+(@ENTRY,0,1,0,61,0,100,3,0,0,0,0,22,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Phase 1 on Aggro'),
+(@ENTRY,0,2,0,9,1,100,2,0,40,5000,10000,11,22662,0,0,0,0,0,4,0,0,0,0,0,0,0,'Cast Wither on Close'),
+(@ENTRY,0,3,0,0,1,100,2,8000,15000,9000,14000,11,7948,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Wild Regeneration'),
+(@ENTRY,0,4,5,0,1,100,2,14000,17000,63000,66000,11,22660,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Dire Wolf Form'),
+(@ENTRY,0,5,0,61,1,100,2,0,0,0,0,22,2,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Phase 2 on Cast Dire Wolf Form'),
+(@ENTRY,0,6,7,0,1,100,2,39000,42000,63000,66000,11,22688,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Tree Form'),
+(@ENTRY,0,7,0,61,1,100,2,0,0,0,0,22,3,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Phase 3 on Cast Tree Form'),
+(@ENTRY,0,8,0,9,2,100,2,0,5,8000,12000,11,19319,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Vicious Bite on Close'),
+(@ENTRY,0,9,0,9,2,100,2,0,10,7000,13000,11,22689,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Mangle on Close'),
+(@ENTRY,0,10,11,0,2,100,2,26000,29000,63000,66000,28,22660,0,0,0,0,0,1,0,0,0,0,0,0,0,'Remove Dire Wolf Form'),
+(@ENTRY,0,11,0,61,2,100,2,0,0,0,0,22,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Phase 1 on Remove Dire Wolf Form'),
+(@ENTRY,0,12,0,9,4,100,2,0,5,9000,14000,11,22691,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Disarm on Close'),
+(@ENTRY,0,13,0,9,4,100,2,0,40,11000,16000,11,22661,0,0,0,0,0,4,0,0,0,0,0,0,0,'Cast Enervate on Close'),
+(@ENTRY,0,14,0,0,4,100,2,8000,15000,12000,16000,11,10101,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Knock Away'),
+(@ENTRY,0,15,16,0,4,100,2,51000,54000,63000,66000,28,22688,0,0,0,0,0,1,0,0,0,0,0,0,0,'Remove Tree Form'),
+(@ENTRY,0,16,0,61,4,100,2,0,0,0,0,22,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Phase 1 on Remove Tree Form'),
+(@ENTRY,0,17,18,2,2,100,3,0,40,0,0,28,22660,0,0,0,0,0,1,0,0,0,0,0,0,0,'Remove Dire Wolf Form at 40% HP'),
+(@ENTRY,0,18,19,61,2,100,3,0,0,0,0,39,100,0,0,0,0,0,1,0,0,0,0,0,0,0,'Call for help at 40% HP'),
+(@ENTRY,0,19,20,2,4,100,3,0,40,0,0,28,22688,0,0,0,0,0,1,0,0,0,0,0,0,0,'Remove Tree Form at 40% HP'),
+(@ENTRY,0,20,0,61,4,100,3,0,0,0,0,39,100,0,0,0,0,0,1,0,0,0,0,0,0,0,'Call for help at 40% HP');
 
 	
+	
+	   /* Trash Mobs */
+			  
 -- Skeletal Highborne
 SET @ENTRY := 11476;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
