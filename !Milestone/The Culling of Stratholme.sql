@@ -1,4 +1,4 @@
-/* Copyright (C) 11 April 2011 patch Project 
+/* Copyright (C) 11 April 2011-2012 patch Project 
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 3 of the License, or
@@ -206,17 +206,5 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,7,0,0,0,100,4,6000,10000,20000,30000,11,58811,0,0,0,0,0,5,32,0,0,0,0,0,0,'Cast Corruption'),
 (@ENTRY,0,8,0,9,0,100,2,0,8,14000,19000,11,20828,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Cone of Cold on Close'),
 (@ENTRY,0,9,0,9,0,100,4,0,8,14000,19000,11,15244,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Cone of Cold on Close');
-
-
-
-
-
-
-
-
-
-
-
-
 
 

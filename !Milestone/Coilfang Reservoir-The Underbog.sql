@@ -35,7 +35,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 18105;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s becomes enraged!',2,0,100,0,0,0, 'combat Enrage');
+(@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 	
 -- Swamplord Musel'ek
 SET @ENTRY := 17826;
@@ -73,12 +73,12 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17826;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'I will end this quickly...',1,0,50,0,0,10385, 'on Aggro Text'),
-(@ENTRY,0,1, 'We fight to the death!',1,0,50,0,0,10384, 'on Aggro Text'),
-(@ENTRY,1,0, 'Beast! Obey me! Kill them at once!',1,0,100,0,0,10383, 'in Combat Text'),
-(@ENTRY,2,0, 'Well... done...',1,0,50,0,0,10389, 'on Player Kill Text'),
-(@ENTRY,2,1, 'Krypta!',1,0,50,0,0,10387, 'on Player Kill Text'),
-(@ENTRY,3,0, 'It is finished.',1,0,100,0,0,10388, 'on Death Text');
+(@ENTRY,0,0, 'I will end this quickly...',14,0,50,0,0,10385, 'on Aggro Text'),
+(@ENTRY,0,1, 'We fight to the death!',14,0,50,0,0,10384, 'on Aggro Text'),
+(@ENTRY,1,0, 'Beast! Obey me! Kill them at once!',14,0,100,0,0,10383, 'in Combat Text'),
+(@ENTRY,2,0, 'Well... done...',14,0,50,0,0,10389, 'on Player Kill Text'),
+(@ENTRY,2,1, 'Krypta!',14,0,50,0,0,10387, 'on Player Kill Text'),
+(@ENTRY,3,0, 'It is finished.',14,0,100,0,0,10388, 'on Death Text');
 
 -- The Black Stalker
 SET @ENTRY := 17882;
@@ -108,7 +108,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17723;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s becomes enraged!',2,0,100,0,0,0, 'combat Enrage');
+(@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 
 -- Claw <Swamplord Musel'ek's Pet>
 SET @ENTRY := 17827;
@@ -123,7 +123,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17827;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s goes into a frenzy!',2,0,100,0,0,0, 'combat Frenzy');
+(@ENTRY,0,0, '%s goes into a frenzy!',16,0,100,0,0,0, 'combat Frenzy');
 
 -- Fen Ray
 SET @ENTRY := 17731;
@@ -143,7 +143,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 19632;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s goes into a frenzy!',2,0,100,0,0,0, 'combat Frenzy');
+(@ENTRY,0,0, '%s goes into a frenzy!',16,0,100,0,0,0, 'combat Frenzy');
 
 -- Lykul Wasp
 SET @ENTRY := 17732;
@@ -157,7 +157,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17732;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s becomes enraged!',2,0,100,0,0,0, 'combat Enrage');
+(@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 
 -- Murkblood Healer
 SET @ENTRY := 17730;
@@ -287,7 +287,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17729;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s becomes enraged!',2,0,100,0,0,0, 'combat Enrage');
+(@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 
 -- Murkblood Tribesman
 SET @ENTRY := 17728;
@@ -301,7 +301,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17728;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s becomes enraged!',2,0,100,0,0,0, 'combat Enrage');
+(@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 
 -- Spore Strider
 SET @ENTRY := 22299;
@@ -339,7 +339,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17734;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s becomes enraged!',2,0,100,0,0,0, 'combat Enrage');
+(@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 
 -- Underbog Lurker
 SET @ENTRY := 17725;
@@ -380,7 +380,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17727;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'Illidan reigns!',0,0,100,0,0,0, 'on Aggro Text');
+(@ENTRY,0,0, 'Illidan reigns!',12,0,100,0,0,0, 'on Aggro Text');
 
 -- Wrathfin Warrior
 SET @ENTRY := 17735;
@@ -395,5 +395,5 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17735;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s becomes enraged!',2,0,100,0,0,0, 'combat Enrage');
+(@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 

@@ -1,4 +1,4 @@
-/* Copyright (C) 11 April 2011 patch Project 
+/* Copyright (C) 11 April 2011-2012 patch Project 
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 3 of the License, or
@@ -35,7 +35,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 10433;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'We are betrayed!',1,0,100,0,0,0, 'combat Say');
+(@ENTRY,0,0, 'We are betrayed!',14,0,100,0,0,0, 'combat Say');
 
 -- Rattlegore
 SET @ENTRY := 11622;
@@ -106,7 +106,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 10488;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s goes into a frenzy!',2,0,100,0,0,0, 'combat Frenzy');
+(@ENTRY,0,0, '%s goes into a frenzy!',16,0,100,0,0,0, 'combat Frenzy');
 
 -- Risen Guard
 SET @ENTRY := 10480;
@@ -247,9 +247,9 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 11582;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'Hmmm, this one looks like something that would be better off as a windchime. Take notes class... This is NOT what you want to summon in the heat of battle.',0,0,50,0,0,0, 'combat Say'),
-(@ENTRY,0,1, 'Now this is an example of what not to summon. Look, it\'s frail and brittle. One good whack from a mace will send bone shards flying.',0,0,50,0,0,0, 'combat Say'),
-(@ENTRY,0,2, 'This one is slightly better than the last. However, it still suffers from the same flimsy bone structure as the others. When you summon one of these, you are on the right path.',0,0,50,0,0,0, 'combat Say');
+(@ENTRY,0,0, 'Hmmm, this one looks like something that would be better off as a windchime. Take notes class... This is NOT what you want to summon in the heat of battle.',12,0,50,0,0,0, 'combat Say'),
+(@ENTRY,0,1, 'Now this is an example of what not to summon. Look, it\'s frail and brittle. One good whack from a mace will send bone shards flying.',12,0,50,0,0,0, 'combat Say'),
+(@ENTRY,0,2, 'This one is slightly better than the last. However, it still suffers from the same flimsy bone structure as the others. When you summon one of these, you are on the right path.',12,0,50,0,0,0, 'combat Say');
 
 -- Scholomance Adept
 SET @ENTRY := 10469;
@@ -299,22 +299,5 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,0,0,0,0,100,2,10000,19000,30000,39000,11,17633,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Arcane Focus'),
 (@ENTRY,0,1,0,0,0,100,2,13000,18000,10000,22000,11,11981,0,0,0,0,0,5,0,0,0,0,0,0,0,'Cast Mana Burn'),
 (@ENTRY,0,2,0,0,0,100,2,5000,5000,8000,11000,11,8994,0,0,0,0,0,5,0,0,0,0,0,0,0,'Cast Banish');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

@@ -51,9 +51,9 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17835;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'Your efforts... are in vain.',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,1, 'We will not be stopped!',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,2, 'The wizard will fall!',0,0,50,0,0,0, 'on Aggro Text');
+(@ENTRY,0,0, 'Your efforts... are in vain.',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,1, 'We will not be stopped!',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,2, 'The wizard will fall!',12,0,50,0,0,0, 'on Aggro Text');
 
 -- Infinite Chrono-Lord
 SET @ENTRY := 21697;
@@ -100,9 +100,9 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17892;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'Your efforts... are in vain.',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,1, 'We will not be stopped!',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,2, 'The wizard will fall!',0,0,50,0,0,0, 'on Aggro Text');
+(@ENTRY,0,0, 'Your efforts... are in vain.',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,1, 'We will not be stopped!',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,2, 'The wizard will fall!',12,0,50,0,0,0, 'on Aggro Text');
 
 -- Infinite Executioner
 SET @ENTRY := 18994;
@@ -121,9 +121,9 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 18994;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'Your efforts... are in vain.',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,1, 'We will not be stopped!',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,2, 'The wizard will fall!',0,0,50,0,0,0, 'on Aggro Text');
+(@ENTRY,0,0, 'Your efforts... are in vain.',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,1, 'We will not be stopped!',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,2, 'The wizard will fall!',12,0,50,0,0,0, 'on Aggro Text');
 
 -- Infinite Timereaver
 SET @ENTRY := 21698;
@@ -170,9 +170,9 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 18995;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'Your efforts... are in vain.',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,1, 'We will not be stopped!',0,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,2, 'The wizard will fall!',0,0,50,0,0,0, 'on Aggro Text');
+(@ENTRY,0,0, 'Your efforts... are in vain.',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,1, 'We will not be stopped!',12,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,2, 'The wizard will fall!',12,0,50,0,0,0, 'on Aggro Text');
 
 -- Infinite Whelp
 SET @ENTRY := 21818;
@@ -198,7 +198,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 21104;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s goes into a frenzy!',2,0,100,0,0,0, 'combat Frenzy');
+(@ENTRY,0,0, '%s goes into a frenzy!',16,0,100,0,0,0, 'combat Frenzy');
 
 -- Rift Lord
 SET @ENTRY := 17839;
@@ -215,7 +215,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17839;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s goes into a frenzy!',2,0,100,0,0,0, 'combat Frenzy');
+(@ENTRY,0,0, '%s goes into a frenzy!',16,0,100,0,0,0, 'combat Frenzy');
 
 -- Time Keeper
 SET @ENTRY := 17918;

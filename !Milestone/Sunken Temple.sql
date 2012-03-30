@@ -1,4 +1,4 @@
-/* Copyright (C) 11 April 2011 patch Project 
+/* Copyright (C) 11 April 2011-2012 patch Project 
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 3 of the License, or
@@ -43,9 +43,9 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 5710;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'The shield be down! Rise up Atal\'ai! Rise up!',1,0,100,0,0,5861, 'combat Say'),
-(@ENTRY,1,0, 'The Soulflayer comes!',1,0,100,0,0,5862, 'combat Say'),
-(@ENTRY,2,0, 'Join us!',1,0,100,0,0,5864, 'combat Say');
+(@ENTRY,0,0, 'The shield be down! Rise up Atal\'ai! Rise up!',14,0,100,0,0,5861, 'combat Say'),
+(@ENTRY,1,0, 'The Soulflayer comes!',14,0,100,0,0,5862, 'combat Say'),
+(@ENTRY,2,0, 'Join us!',14,0,100,0,0,5864, 'combat Say');
 
 -- Weaver
 SET @ENTRY := 5720;
@@ -69,7 +69,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 5709;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'This evil cannot be allowed to enter this world!  Come my children!',1,0,100,0,0,0, 'combat Say');
+(@ENTRY,0,0, 'This evil cannot be allowed to enter this world!  Come my children!',14,0,100,0,0,0, 'combat Say');
 
 -- Ogom the Wretched
 SET @ENTRY := 5711;
@@ -161,7 +161,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 5269;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s attempts to run away in fear!',2,0,100,0,0,0, 'combat Flee');
+(@ENTRY,0,0, '%s attempts to run away in fear!',16,0,100,0,0,0, 'combat Flee');
 
 -- Atal'ai High Priest
 SET @ENTRY := 5273;
@@ -190,7 +190,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 5273;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s attempts to run away in fear!',2,0,100,0,0,0, 'combat Flee');
+(@ENTRY,0,0, '%s attempts to run away in fear!',16,0,100,0,0,0, 'combat Flee');
 
 -- Corrupted Guardian
 SET @ENTRY := 46068;

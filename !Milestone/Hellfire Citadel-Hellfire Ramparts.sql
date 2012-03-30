@@ -47,9 +47,9 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17270;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'The blood is our power!',1,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,1, 'We are the true Horde!',1,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,2, 'This world is OURS!',1,0,50,0,0,0, 'on Aggro Text');
+(@ENTRY,0,0, 'The blood is our power!',14,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,1, 'We are the true Horde!',14,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,2, 'This world is OURS!',14,0,50,0,0,0, 'on Aggro Text');
 
 -- Bleeding Hollow Darkcaster
 SET @ENTRY := 17269;
@@ -94,9 +94,9 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17478;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'The blood is our power!',1,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,1, 'We are the true Horde!',1,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,2, 'This world is OURS!',1,0,50,0,0,0, 'on Aggro Text');
+(@ENTRY,0,0, 'The blood is our power!',14,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,1, 'We are the true Horde!',14,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,2, 'This world is OURS!',14,0,50,0,0,0, 'on Aggro Text');
 
 -- Bonechewer Beastmaster
 SET @ENTRY := 17455;
@@ -115,8 +115,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17455;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'Hold them back while I release the warhounds!',1,0,100,0,0,10160, 'on Aggro Text'),
-(@ENTRY,1,0, 'My pets are hungry and they will dine on your flesh!',1,0,100,0,0,10161, 'on Aggro Text');
+(@ENTRY,0,0, 'Hold them back while I release the warhounds!',14,0,100,0,0,10160, 'on Aggro Text'),
+(@ENTRY,1,0, 'My pets are hungry and they will dine on your flesh!',14,0,100,0,0,10161, 'on Aggro Text');
 
 -- Bonechewer Destroyer
 SET @ENTRY := 17271;
@@ -130,9 +130,9 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17271;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'The blood is our power!',1,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,1, 'We are the true Horde!',1,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,2, 'This world is OURS!',1,0,50,0,0,0, 'on Aggro Text');
+(@ENTRY,0,0, 'The blood is our power!',14,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,1, 'We are the true Horde!',14,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,2, 'This world is OURS!',14,0,50,0,0,0, 'on Aggro Text');
 
 -- Bonechewer Hungerer
 SET @ENTRY := 17259;
@@ -149,10 +149,10 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17259;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'The blood is our power!',1,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,1, 'We are the true Horde!',1,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,2, 'This world is OURS!',1,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,1,0, '%s attempts to run away in fear!',2,0,100,0,0,0, 'combat Flee');
+(@ENTRY,0,0, 'The blood is our power!',14,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,1, 'We are the true Horde!',14,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,2, 'This world is OURS!',14,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,1,0, '%s attempts to run away in fear!',16,0,100,0,0,0, 'combat Flee');
 
 -- Bonechewer Ravener
 SET @ENTRY := 17264;
@@ -166,10 +166,10 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17264;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, 'The blood is our power!',1,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,1, 'We are the true Horde!',1,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,0,2, 'This world is OURS!',1,0,50,0,0,0, 'on Aggro Text'),
-(@ENTRY,1,0, 'You there!  Keep a close watch on these ramparts, intruders could approach at any time!',1,0,100,0,0,0, 'OOC Text');
+(@ENTRY,0,0, 'The blood is our power!',14,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,1, 'We are the true Horde!',14,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,0,2, 'This world is OURS!',14,0,50,0,0,0, 'on Aggro Text'),
+(@ENTRY,1,0, 'You there!  Keep a close watch on these ramparts, intruders could approach at any time!',14,0,100,0,0,0, 'OOC Text');
 
 -- Bonechewer Ripper
 SET @ENTRY := 17281;
@@ -182,7 +182,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 SET @ENTRY := 17281;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0, '%s becomes enraged!',2,0,100,0,0,0, 'combat Enrage');
+(@ENTRY,0,0, '%s becomes enraged!',16,0,100,0,0,0, 'combat Enrage');
 
 -- Fiendish Hound
 SET @ENTRY := 17540;
